@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Becoming Beyond the Labels</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Allura&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Montserrat,Arial,sans-serif;
+background:#fff;
+color:#3b0058;
+overflow-x:hidden;
+}
+body:before{
+content:"";
+position:fixed;
+top:0;left:0;width:100%;height:100%;
+background:
+radial-gradient(circle at top left,rgba(225,120,255,.35),transparent 30%),
+radial-gradient(circle at bottom right,rgba(166,0,220,.25),transparent 35%),
+linear-gradient(180deg,#fff 45%,#faf0ff 100%);
+z-index:-2;
+}
+.glow{
+position:fixed;
+width:250px;height:250px;
+border-radius:50%;
+background:#b000ff;
+filter:blur(100px);
+opacity:.15;
+animation:move 10s infinite alternate;
+z-index:-1;
+}
+@keyframes move{from{transform:translate(0,0)}to{transform:translate(70px,40px)}}
+.container{max-width:1100px;margin:auto;padding:30px 20px}
+.logo{display:flex;align-items:center;gap:15px;font-weight:800;font-size:22px;margin-bottom:30px}
+.logo img{width:65px;height:65px;border-radius:50%;object-fit:cover}
+.event-date{margin-top:35px;background:white;color:#700090;display:inline-block;padding:18px 35px;border-radius:18px;font-size:28px;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.floating-cta{position:fixed;right:25px;bottom:25px;z-index:10;background:#8f00c7;color:white;padding:18px 30px;border-radius:50px;font-size:18px;font-weight:900;text-decoration:none;box-shadow:0 15px 35px rgba(143,0,199,.45);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+.hero-box{
+background:linear-gradient(135deg,#b500e8,#650080);
+border-radius:35px;
+padding:65px 35px;
+text-align:center;
+color:white;
+box-shadow:0 25px 50px rgba(110,0,150,.25);
+}
+.small{letter-spacing:8px;font-size:14px}
+.script{
+font-family:Allura,cursive;
+font-size:80px;
+line-height:.8;
+}
+h1{
+font-size:clamp(45px,7vw,80px);
+font-weight:900;
+line-height:.9;
+text-transform:uppercase;
+}
+.subtitle{font-size:20px;margin-top:25px}
+.btn{
+display:inline-block;
+margin-top:35px;
+background:white;
+color:#8c00bd;
+padding:16px 35px;
+border-radius:40px;
+font-weight:800;
+text-decoration:none;
+}
+section{padding:60px 0}
+h2{
+font-size:40px;
+font-weight:900;
+text-align:center;
+margin-bottom:25px;
+}
+p{max-width:850px;margin:15px auto;text-align:center;font-size:18px;color:#4d285b}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(100,0,130,.12);
+font-weight:700;
+color:#650080;
+}
+.register{
+background:#faf0ff;
+padding:30px;
+border-radius:25px;
+}
+iframe{width:100%;min-height:650px;border:none}
+.whatsapp{
+background:#8f00c7;
+color:white;
+padding:16px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+}
+footer{text-align:center;padding:40px;color:#650080}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<a class="floating-cta" href="#register">REGISTER NOW</a>
+
+<div class="container">
+<div class="logo">
+<img src="decency-logo.png" alt="Decency to the World">
+<span>DECENCY TO<br>THE WORLD</span>
+</div>
+
+<section class="hero-box">
+<div class="small">PRESENTS:</div>
+<div class="script">Becoming</div>
+<h1>Beyond<br>The Labels</h1>
+<div class="subtitle">
+Breaking Free, Reclaiming Identity,<br>
+Walking in Purpose, Becoming Your Best
+</div>
+<div class="event-date">10th AUGUST 2026<br><span style="font-size:18px">10:00 AM</span></div><br>
+<a class="btn" href="#register">REGISTER NOW</a>
+</section>
+
+<section>
+<h2>About The Event</h2>
+<p>
+Becoming Beyond the Labels is a transformational gathering designed to help people break free from limiting labels, rediscover their identity, walk confidently in purpose, and connect with a supportive community.
+</p>
+</section>
+
+<section>
+<h2>What To Expect</h2>
+<div class="cards">
+<div class="card">Powerful Speakers</div>
+<div class="card">Real Heart-to-Heart Conversations</div>
+<div class="card">Healing and Encouragement</div>
+<div class="card">A Supportive Community</div>
+</div>
+</section>
+
+<section>
+<h2>Event Experience</h2>
+<div class="cards">
+<div class="card">Keynote Sessions</div>
+<div class="card">Panel Discussions</div>
+<div class="card">Networking</div>
+<div class="card">Question & Answer</div>
+<div class="card">Mentorship</div>
+<div class="card">Community Access</div>
+</div>
+</section>
+
+<section id="register">
+<h2>Reserve Your Seat</h2>
+<div class="register">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrTvMFLOWJUl8MORY-nB9ePsCr--Gr1jc58B_lBFLGkfgrtg/viewform?embedded=true"></iframe>
+</div>
+</section>
+
+<section style="text-align:center">
+<h2>Join The Community</h2>
+<p>Continue the journey beyond the event.</p>
+<a class="whatsapp" href="https://chat.whatsapp.com/JubJnMgnXq79TJHe7IwZUr?s=cl&p=a&mlu=1">Join WhatsApp Community</a>
+</section>
+</div>
+
+<footer>
+Decency to the World | 0810 252 1726<br>
+10th August 2026 • 10:00 AM
+</footer>
+
+</body>
+</html>
